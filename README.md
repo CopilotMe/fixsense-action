@@ -126,6 +126,7 @@ Any framework that produces **JUnit XML** reports:
 | **Mocha** | `mocha-junit-reporter` |
 | **RSpec** | `rspec_junit_formatter` |
 | **Go** | `go-junit-report` |
+| **Dart / Flutter** | `dart test --machine \| tojunit` ([junitreport](https://pub.dev/packages/junitreport)) |
 
 ## Get Your API Key
 
