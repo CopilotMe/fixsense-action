@@ -146,11 +146,19 @@ Free plan includes **350 analyses/month** — enough for most small-to-mid teams
 - **Works with any CI** — GitHub Actions, self-hosted runners, any JUnit XML producer
 - **Dashboard included** — track failure trends, top flaky tests, auto-fix success rates at [fix-sense.vercel.app](https://fix-sense.vercel.app)
 
+## Feedback & Issues
+
+Found a bug, have a feature idea, or want to share feedback? Open an issue directly in this repo:
+
+- **Bug?** → [Open a bug report](https://github.com/CopilotMe/fixsense-action/issues/new?template=bug_report.md)
+- **Feature idea?** → [Request a feature](https://github.com/CopilotMe/fixsense-action/issues/new?template=feature_request.md)
+- **General feedback?** → [Start a discussion](https://github.com/CopilotMe/fixsense-action/issues/new)
+
 ## Links
 
-- [FixSense Dashboard](https://fix-sense.vercel.app)
+- [FixSense Dashboard](https://fix-sense.vercel.app/dashboard)
 - [Documentation](https://fix-sense.vercel.app/docs)
-- [GitHub App](https://github.com/apps/fix-sense) (zero-config alternative)
+- [GitHub Marketplace](https://github.com/marketplace/fixsense-ai-ci-failure-analysis-auto-fix)
 
 ## License
 
