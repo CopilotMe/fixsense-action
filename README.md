@@ -12,6 +12,15 @@
 
 ## What You Get
 
+## Screenshots
+
+### Analysis Card
+![FixSense Analysis Card](docs/analysis-card.png)
+
+### Dashboard
+![FixSense Dashboard](docs/dashboard-stats.png)
+
+
 For every failing test, FixSense provides:
 
 | Feature | Description |
