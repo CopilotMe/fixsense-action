@@ -211,25 +211,6 @@ runs:
         echo ""
 
 
-        # ── Print analysis results to CI log ────────────────────
-        echo ""
-        echo "$ANALYSES" | node -e "
-        const analyses = JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));
-        for (const a of analyses) {
-          if (a.status !== 'success') { console.log('❌ ' + a.testName + ': ' + (a.error || 'failed')); continue; }
-          console.log('');
-          console.log('────────────────────────────────────────────────────────');
-          console.log('📋 ' + a.testName);
-          console.log('────────────────────────────────────────────────────────');
-          console.log('🔍 Root Cause: ' + (a.rootCause || 'N/A'));
-          console.log('💡 Suggested Fix: ' + (a.suggestedFix || 'N/A'));
-          console.log('📊 Flakiness: ' + (a.flakynessScore || 0) + '/100');
-          console.log('🎯 Confidence: ' + (a.confidence || 'unknown'));
-          console.log('🔗 Related Change: ' + (a.diffHint || 'N/A'));
-        }
-        "
-        echo ""
-
         # ── Post PR comment ───────────────────────────────────────
         if [ "$POST_COMMENT" = "true" ] && [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "0" ]; then
           echo "💬 Posting analysis comment to PR #$PR_NUMBER..."
@@ -291,3 +272,6 @@ runs:
 
         echo ""
         echo "🏁 FixSense analysis complete: $FAILURE_COUNT failure(s) analyzed"
+        echo ""
+        echo "📊 View full dashboard: https://fix-sense.vercel.app/dashboard"
+        echo "🚀 Get auto-fix PRs: https://fix-sense.vercel.app/docs/guides/auto-fix"
